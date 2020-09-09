@@ -1,0 +1,65 @@
+body{
+background-color: silver;
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+.btn {
+    border:none;
+    padding:10px 25px;
+    background-color: gray;
+    color: honeydew;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+    cursor:pointer;
+}
+
+.btn:hover {
+    background-color: hotpink;
+}
+
+a{
+    text-decoration:none ;
+    color:whitesmoke;
+    font-size:16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:darkgrey; 
+}
+
+
+.nav_menu{
+    list-style:none;
+}
+.nav_menu li {
+    display:inline-block;
+    padding: 0px 20px;
+}
+.nav_menu{
+    list-style: none;
+}
+.nav_menu{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_menu li a {
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+}
+
+.nav_menu li a:hover {
+    color: hotpink;
+}
+
+
+
+
+
+
