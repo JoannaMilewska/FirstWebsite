@@ -3,61 +3,120 @@ background-color: silver;
 margin:0;
 padding:0;
 box-sizing: border-box;
+width: 100vw;
+
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .btn {
     border:none;
     padding:10px 25px;
-    background-color: gray;
+    background-color: rgb(199, 121, 97);
     color: honeydew;
     font-size: 20px;
     border-radius: 15px;
     transition: 0.3s;
     cursor:pointer;
 }
+.btn a{
+    height: 100%;
+    width: 100%;
+}
 
 .btn:hover {
-    background-color: hotpink;
+    background-color: rgb(228, 191, 149);
+    color: darkblue;
 }
+.btn:active{
+    transform: scale(0.9);
+    transition: 0.5s;
+ }
+    
 
 a{
     text-decoration:none ;
     color:whitesmoke;
-    font-size:16px;
+    font-size:20px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-    background-color:darkgrey; 
+    padding: 15px 10%;
+    background-color:#1f0542; 
 }
 
-
-.nav_menu{
-    list-style:none;
-}
 .nav_menu li {
     display:inline-block;
     padding: 0px 20px;
 }
 .nav_menu{
     list-style: none;
-}
-.nav_menu{
     display: inline-block;
     padding: 0px 20px;
+
 }
 .nav_menu li a {
     transition: all 0.3s ease 0s;
-    font-size: 16px;
+    
 }
 
 .nav_menu li a:hover {
-    color: hotpink;
+    color: rgb(228, 191, 149);
 }
 
+.hero-section{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width:1600px;
+    height:700px;
+    color: whitesmoke;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('plane.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;}
+.hero-section h1{
+font-size: 60px;
+}
+.hero-section h2{
+    font-size: 30px;
+}
+.button_start {
+    border-radius: 15px;
+    border: 3px solid white;
+    cursor: pointer;
+    padding: 15px 25px;
+    transition: 0.3s;
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.button_start:hover{
+    background-color:rgb(228, 191, 149);
+    color: darkblue;
+}
+.button_start:active{
+transform: scale(0.9);
+transition: 0.5s;
+}
+#contact_section h1{
+    text-align: center;
+    color:whitesmoke;
+}
+.contact_form_text{
+    display: block;
+    width: 80%;
+    padding: 20px 40px;
+    margin: 16px 0;
+    box-sizing: border-box;
+}
 
 
 
