@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        <title>Dżoana's travel</title>
-        <link rel="icon" type="image/png" href="./favicon.ico"/>  <!--elo nie wiem o co chodzi--> 
-        <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <!-- 0. w sumie lang u Ciebie to 'pl' -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dżoana's travel</title>
+    <!-- 1. mozesz tez dodac 'description' i 'keywords' -->
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <img src="logo1.png" alt="travel logo" width="150" height="150">
-
-    <nav>
+      <img src="logo1.png" alt="travel logo" width="150" height="150" />
+      <!-- 2a. logo1 nic nie mowi, lepiej jakby to bylo cos w tylu 'header-logo' albo 'travel-logo'-->
+      <!-- 2b. stylowanie img powinno byc w css -->
+      <nav>
         <ul class="nav_menu">
-            <li><a href="#">O mnie</a></li>
-            <li><a href="#">Galeria</a></li>
-            <li><a href="#">Wspomnienia z podróży</a></li>
-            <li><a href="#">Współpraca</a></li>
+          <!-- 3. klasy albo z kebab-case albo snake_case - jedno z nich -->
+          <li><a href="#">O mnie</a></li>
+          <li><a href="#">Galeria</a></li>
+          <li><a href="#">Wspomnienia z podróży</a></li>
+          <li><a href="#">Współpraca</a></li>
         </ul>
-    
-    <button class="btn" ><a href="#contact_section">Kontakt</a></button> 
-</nav>
+        <!-- 4. klase dac bardziej opisowa, typu header-contact-button -->
+        <button class="btn"><a href="#contact_section">Kontakt</a></button>
+        <!-- 5. ten 'a' dac na cala szerokosc i wysokosc buttona - dodac klase i stylowanie -->
+      </nav>
     </header>
+    <!-- 6a. tutaj powinien zaczac sie <main> -->
     <section class="hero-section">
-        <div class="hero-text">
-            <h1>Let's start the journey</h1>
-            <h3>Już dziś zaplanuj podróż, o jakiej zawsze marzyłeś</h3>
-            <button class="button_start">Rozpocznij przygodę</button>
-        
-    </div>
+      <div class="hero-text">
+        <!-- 7. hero-text ale odnosi sie do diva - pudełka - lepiej dac hero-wrapper albo ostylowac sam tekst albo ostylowac i diva i tekst-->
+        <h1>Let's start the journey</h1>
+        <h3>Już dziś zaplanuj podróż, o jakiej zawsze marzyłeś</h3>
+        <button class="button_start">Rozpocznij przygodę</button>
+      </div>
     </section>
-    <form>
-
     <div id="contact_section">
-        <h1>Zadaj pytanie</h1>
-        <form class="contact_form">
-        <input type="text" class="contact_form_text" placeholder="Imię">
-        <input type="email" class="contact_form_text" placeholder="Adres e-mail">
-        <textarea class="contact_form_text" placeholder="Twoja wiadomość"></textarea>
-        
-    
+      <!-- 8. contact section to tez section, nie <div> -->
+      <!-- 9. raz snake case raz kebab case - wybrac jeden  -->
+      <h1>Zadaj pytanie</h1>
+      <form class="contact_form">
+        <input type="text" class="contact_form_text" placeholder="Imię" />
+        <input
+          type="email"
+          class="contact_form_text"
+          placeholder="Adres e-mail"
+        />
+        <textarea
+          class="contact_form_text"
+          placeholder="Twoja wiadomość"
+        ></textarea>
+      </form>
     </div>
-    </form>
-        <!--<button class="btn">O mnie</button>
-        <button class="btn">Galeria</button>
-        <button class="btn">Wspomniania z podróży</button>
-        <button class="btn">Kontakt</button>-->
-
-</body>
+    <!-- 6b. tutaj powinien sie skonczyc main -->
+  </body>
 </html>
+
+<!-- 1. Komentowanie kodu spoko, ale jesli jest niepotrzebny to do wywalenia -->
+<!-- 2. Byl burdel w znacznikach - dwa otwierajace <form> -->
+<!-- 3. Atrybut 'name' dla inputów -->
+<!-- 4. Formatowanie -->
+<!-- 5. Jedna konwencja stylowania - albo snake_case albo kebab-case -->
+<!-- BEM -->
